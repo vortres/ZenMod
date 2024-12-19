@@ -1,0 +1,84 @@
+{
+  "client": {
+    "prefix": ";",
+    "autoSkinUsername": "off",
+    "colors": {
+      "PRIMARY": "#3b82f6",
+      "SECONDARY": "#a855f7",
+      "DANGER": "#f43f5e",
+      "SUCCESS": "#10b981",
+      "GRAY": "#353b40"
+    },
+
+    "customChat": {
+      "format": {
+        "color": "#353B40",
+        "translate": "[%s] %s › %s",
+        "with": [
+          {
+            "translate": "%s%s%s",
+            "with": [
+              { "color": "#3B82F6", "text": "Z", "bold": false },
+              { "color": "#726CF7", "text": "E", "bold": false },
+              { "color": "#A855F7", "text": "N", "bold": false }
+            ],
+            "clickEvent": {
+              "action": "open_url",
+              "value": "https://zenzoya.netlify.app/"
+            },
+            "hoverEvent": {
+              "action": "show_text",
+              "contents": [
+                {
+                  "color": "#726CF7",
+                  "text": "Click to go to my Website :3",
+                  "underlined": true
+                }
+              ]
+            }
+          },
+          { "color": "#726CF7", "selector": "USERNAME" },
+          {
+            "color": "#C8E6EA",
+            "text": "MESSAGE",
+            "clickEvent": { "action": "copy_to_clipboard", "value": "MESSAGE" },
+            "hoverEvent": {
+              "action": "show_text",
+              "contents": [
+                { "color": "#726CF7", "text": "Click to Copy message to Clipboard!" }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+
+  "core": {
+    "relativeArea": {
+      "start": {
+        "x": 8,
+        "y": 0,
+        "z": 8
+      },
+      "end": {
+        "x": 23,
+        "y": 2,
+        "z": 23
+      }
+    }
+  },
+
+  "bots": {
+    "lambda": { "prefix": "\\", "key": "" },
+    "chomens": { "prefix": "*", "key": null, "authKey": null, "formatKey": null },
+    "nbot": { "prefix": "?", "key": null },
+    "qbot": {"prefix":"}", "key": null},
+    "fnfboyfriend": { "prefix": "~", "key": null },
+    "hbot": { "prefix": "#", "key": null },
+    "sbot": { "prefix": ":", "key": null },
+    "testbot": { "prefix": "-", "webhookUrl": null },
+    "chipmunk": { "prefix": "'", "key": null },
+    "kittycorp": { "prefix": "^", "key": null }
+  }
+}

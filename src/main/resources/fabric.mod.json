@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "zenmod",
+  "version": "${version}",
+
+  "name": "ZenMod",
+  "description": "My fork of ChipmunkMod\n\nThanks for _ChipMC_, chayapak, 7cc5c4f330d47060\nbecause they are the base contributor of this fork",
+  "authors": [
+    "_ChipMC_",
+    "chayapak",
+    "7cc5c4f330d47060",
+    "ZenZoya"
+  ],
+  "contact": {
+    "homepage": "https://name3.chipmunk.land/",
+    "Zen's homepage" : "https://zenzoya.netlify.app/",
+    "sources": "https://github.com/vortres/zenmod",
+    "issues": "https://github.com/vortres/zenmod/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/chipmunkmod/icon2.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "land.chipmunk.chipmunkmod.ChipmunkMod"
+    ]
+  },
+  "mixins": [
+    "chipmunkmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "fabric-api": "*",
+    "minecraft": ">=1.21",
+    "java": ">=21"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

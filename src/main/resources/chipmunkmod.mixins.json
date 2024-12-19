@@ -1,0 +1,33 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "land.chipmunk.chipmunkmod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ChatInputSuggestorMixin",
+    "ChatScreenMixin",
+    "ClientConnectionAccessor",
+    "ClientConnectionInvoker",
+    "ClientConnectionMixin",
+    "ClientPlayerEntityMixin",
+    "ClientPlayNetworkHandlerAccessor",
+    "ClientPlayNetworkHandlerMixin",
+    "CommandDispatcherMixin",
+    "ElderGuardianAppearanceParticleMixin",
+    "IdentifierMixin",
+    "MinecraftClientAccessor",
+    "PlayerListEntryAccessor",
+    "SoundSystemMixin",
+    "StringHelperMixin",
+    "TextFieldWidgetMixin",
+    "TextMixin",
+    "TextSerializerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "TextMixin",
+    "TextSerializerMixin"
+  ]
+}
